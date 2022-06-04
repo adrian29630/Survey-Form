@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+
+        <head>
+            <meta charset="uft-8">
+            <title>Survey Form</title>
+            <link rel="stylesheet" href="styles.css" />
+        </head>
+
+        <body>
+            <h1 id="title">Client Survey Form</h1>
+            <p id="description"><em>Please complete this form to help us inprove our service.</em></p>
+            <div class="form">
+                <form id="survey-form" action='https://repdomwebs.com'>
+
+                    <div class="form-group">
+                        <label id="name-label" for="name">Your Name: </label><input id="name" class="form-control"
+                            type="text" name="name" required="" placeholder="Your Name" />
+                    </div>
+                    <div class="form-group">
+                        <label id="email-label" for="email">Your Email: </label><input id="email" class="form-control"
+                            type="email" name="email" required="" placeholder="Your Email" />
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" for="number">Your Reference Number: </label><input id="number"
+                            class="form-control" type="number" name="number" required min="10" max="20"
+                            placeholder="Account Number" />
+                    </div>
+                    <div class="form-group">
+                        <p> Which option best describes your current role?</p>
+                        <select id="dropdown" class="form-control" name="role" required="">
+                            <option value=" select"> Select Current Role</option>
+                            <option value="business-owner">Business-owner</option>
+                            <option value="seo-consultant">SEO Consultant</option>
+                            <option value="web-designer">Web Designer</option>
+                            <option value="other">Other</option>
+                            <option value="prefernot">Prefer Not To Say</option>
+                        </select>
+                        <div class="form-group">
+                            <p>Would you recommend RepDomWebs to a friend or colleague?</p>
+                            <label>
+                                <input id="input-radio" name="recommend" value="definitely" type="radio"
+                                    checked="">Definitely
+                            </label>
+                            <label>
+                                <input id="input-radio" name="recommend" value="maybe" type="radio">Maybe
+                            </label>
+                            <label>
+                                <input id="input-radio" name="recommend" value="not-sure" type="radio">Not Sure
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <p>Which of the folowing features do you like?</p>
+                            <select id="most-like" name="mostLike" class="form-control" required>
+                                <option  selected="" value>Select an option</option>
+                                <option value="tutorials">Tutorials</option>
+                                <option value="newsletters">Newsletters</option>
+                                <option value="plugin-recommendations">Plugin Recommendations</option>
+                                <option value="security-warnings">Security Warnings</option>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                    <p>Which of the following services would be of interest to you?
+                                        <span class="clue">(Check all that apply)</span>
+                                    </p>
+                                
+                                    <label><input name="prefer" value="new-website" type="checkbox" class="input-checkbox" />
+                                        A New Website
+                                    </label>
+                                    <label>
+                                        <input name="prefer" value="update-website" type="checkbox" class="input-checkbox" />Up date My Website
+                                       
+                                    </label>
+                                    <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data
+                                        Visualization
+                                    </label>
+                                    <label><input name="prefer" value="seo" type="checkbox" class="input-checkbox" />SEO</label>
+                                    <label><input name="prefer" value="managed-website" type="checkbox" class="input-checkbox" />Managed Website Service
+                                        
+                                    </label>
+                                        <label><input name="prefer" value="google-ads" type="checkbox" class="input-checkbox" />Google Advertising
+                                            </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <p>Any comments or suggestions?</p>
+                                                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" id="submit" class="submit-button">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                            </form>
+                                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+        </body>
+
+    </html>
